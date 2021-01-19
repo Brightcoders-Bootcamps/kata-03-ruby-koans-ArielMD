@@ -35,7 +35,6 @@ def score(dice)
   dice.sort.each do |roll|
     data.key?(roll) ? data[roll] += 1 : data[roll] = 1;
   end
-  puts(data)
   score = 0
   data.keys.each do |s|
     if( s == 1 )
